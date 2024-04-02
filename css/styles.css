@@ -1,0 +1,262 @@
+div{
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("/images/background.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: 20;
+}
+
+main{
+    z-index: 40;
+    margin: 0;
+    padding: 20px 0; 
+    background-color: whitesmoke;
+    height: min-content;
+}
+.navbar {
+    position: relative; 
+    z-index: 10;
+    background-color:#1A3C1D ;
+    opacity: 0.9;
+    height: 70vh;
+    color: #f5f5f5;
+    display: flex;
+    padding-bottom: 40px;
+    justify-content: space-between;
+    padding: 10px 20px;
+    font-size: 15px;
+}
+
+.navbar .left-section {
+    padding-top: 40px;
+    display: inline;
+    align-items: center;
+}
+
+.navbar .center-section {
+    padding-top: 65px;
+    text-align: center;
+}
+
+#vision span{
+    position: absolute;
+    top: 28%;
+    font-family:"arial";
+    color: whitesmoke;
+    font-size: 380%;
+    z-index: 100;
+    text-align: center;
+    
+}
+.website-container {
+    display: flex; 
+    align-items: center; 
+}
+
+.website-container img { 
+    width: 70px;
+    height: 70px;
+    margin-right: 10px; 
+}
+
+.website-name {
+    font-size: 30px;
+    font-weight: bolder;
+    color: whitesmoke;
+    text-align: center ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;    
+}
+
+.navbar a {
+    color: whitesmoke;
+    text-decoration: none;
+    margin: 0 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.navbar .user {
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+}
+
+
+.dropbtn {
+    background-color: #1A3C1D; 
+    color: #f5f5f5; 
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 60px;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1A3C1D;
+    min-width: 160px;
+    z-index: 20;
+}
+  
+.dropdown-content a {
+    color: #f5f5f5; 
+    padding: 8px 14px;
+    text-decoration: none;
+    display: block;
+    border-radius: 5px;
+}
+  
+.dropdown-content a:hover {
+    background-color: whitesmoke; 
+    color: #1A3C1D;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+  
+.dropdown:hover .dropbtn {
+    text-decoration: underline; 
+}
+
+.footer-container{
+    position: absolute;
+    width: 100%;
+}
+
+.footer{
+    z-index: 10;
+    opacity: 0.9;
+    height: 60%;
+    background-color:#2B3121;
+    color: whitesmoke;
+    padding: 20px 20px 20px 0px ;
+    text-align: left;
+    bottom: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;    
+}
+
+.footer-content {
+    display: flex;
+    grid-template-columns: auto;
+    padding: 0px 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content span{
+    margin-left: 40px;
+}
+
+.footer-content img{
+    width: 70px;
+    height: 70px;   
+}
+
+.footer-content .left-sector{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.footer-content .left-sector .footer-title{
+    padding-top: 2%;
+    font-size: 30px;
+
+}
+
+.footer-content ol {
+    list-style: none;
+    padding: 0 20px;
+} 
+
+.footer-content ol li {
+    padding-top: 30px;
+    margin-right: 10px;
+}
+
+.footer-content ol li a {
+    color:whitesmoke;
+    text-decoration: none;
+}
+
+.footer-content ol li a:hover {
+    text-decoration: underline;
+}
+
+.footer-content ol li:last-child{
+    margin-bottom: 30px;
+}
+
+#footerline p{
+    text-align: center;
+}
+
+#pageeditor > a{
+    padding: 20px 20px 30px 0;
+}
+
+.editordropbtn {
+    background-color: #2B3121;
+    color: #f5f5f5;
+    padding: 0;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+  
+.editordropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 60px;
+}
+  
+.editordropdown-content {
+    top: 0;
+    right: 0;
+    margin-right: 22px;
+    display: none;
+    position: absolute;
+    color: black;
+    min-width: 160px;
+    z-index: 40;
+}
+  
+.editordropdown-content a {
+    color: black;
+    padding: 4px 1px;
+    text-decoration: none;
+    display: block;
+}
+  
+.editordropdown-content a:hover {
+    color: black;
+}
+  
+.editordropdown:hover .editordropdown-content { 
+    display: block;
+}
+
+#pageeditor{
+    padding-left: 50px;
+    margin: 10px 0 0 10px;
+}
+  
+  

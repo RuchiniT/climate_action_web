@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F1F8E9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+.logo {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.mission {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #008000;
+}
+
+.member {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #008000;
+}
+
+.loader {
+    width: 150px;
+    height: 150px;
+}
