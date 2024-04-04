@@ -9,7 +9,7 @@
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 <body>
-    <div class="navbar">
+    <div class="navbar" style="height: 22vh;">
         <div class="left-section">
             <div class = "website-container">
                 <span class = "logo"><img src="images/logo.png" alt="Logo"></span>
@@ -30,16 +30,10 @@
                     <a href = "content_Student4.html" target = "_blank">Evidence</a>
                     <a href = "content_Student2.html" target = "_blank">Causes</a>
                     <a href = "content_Student3.html" target = "_blank">Effects</a>
-                    <a href = "ruchiniContentPage.html" target = "_blank">Action</a>
+                    <a href = "content_Student1.html" target = "_blank">Action</a>
                 </div> 
-            </div> 
-              
-        </div>
-        
-    </div>
-
-    <div id = "vision">
-        <span>"Take urgent action to combat climate change and its impacts."</span>
+            </div>     
+        </div>  
     </div>
     
     <main>
@@ -57,13 +51,13 @@
                         <div class="card_title"><h2 class="header_text">Payment Details</h2></div>
                         
                         <label for="card_number">Card Number:</label><span style="color: red !important; display: inline; float: none;">*</span>
-                        <input type="text" name="card_number" id="card_number" class="checkout_input" maxlength="16" size="16" required><br><br>
+                        <input type="number" name="card_number" id="card_number" class="checkout_input" maxlength="16" size="16" required><br><br>
                         <label for="cardholder_name">Cardholder Name:</label><span style="color: red !important; display: inline; float: none;">*</span>
                         <input type="text" name="cardholder_name" id="cardholder_name" class="checkout_input" size="20" required><br><br>
                         <label for="expiry_date">Expiry date:</label><span style="color: red !important; display: inline; float: none;">*</span>
                         <input type="date" id="expiry_date" class="checkout_input" name="expiry_date" required><br><br>
                         <label for="ccv">CCV:</label><span style="color: red !important; display: inline; float: none;">*</span>
-                        <input type="text" name="ccv" id="ccv" maxlength="3" size="3" class="cvv" required><br><br>
+                        <input type="number" name="ccv" id="ccv" maxlength="3" size="3" class="cvv" required><br><br>
                     </div>
                 </div>
 
@@ -85,7 +79,7 @@
                         <input type="text" name="postcode" id="postcode" class="checkout_input" size="20" required><br><br>
             
                         <label for="country">Country</label><span style="color: red !important; display: inline; float: none;">*</span>      
-                        <select id="country" class="checkout_input" name="country" class="form-control" style="margin-bottom: 20px;">
+                        <select id="country" class="checkout_input" name="country" style="margin-bottom: 20px;">
                             <option value="Afghanistan">Afghanistan</option>
                             <option value="Åland Islands">Åland Islands</option>
                             <option value="Albania">Albania</option>
@@ -351,15 +345,11 @@
                 <div class="card">
                     <div class="container">
                         <br>
-                        <input type="checkbox" name="express_delivery" class="express_delivery" value="express delivery">
+                        <input type="checkbox" name="express_delivery" id="express_delivery" value="express delivery">
                         <label for="express_delivery">Express Delivery</label><br><br>
                         <button class="product_button" onclick="checkout()">Checkout</button>
                     </div>
                 </div>
-
-
-
-                
             </form>
         </div>
     </main>
@@ -375,27 +365,30 @@
                     <li><a href="home.html" target="_self">Home</a></li>
                     <li><a href="team.html">Meet the Team</a></li>
                     <li><a href = "feedback.html" target = "_blank">Feedback</a></li>
-                    <li><div class="editordropdown">
+                    <li><a href = "sitemap.html" target = "_blank">Site Map</a></li>
+                    <li>
+                        <div class="editordropdown">
                             <button class="editordropbtn">Page Editor</button>
                             <div class="editordropdown-content">
-                              <a href = "ruchiniPageEditor.html" target = "_blank">Student 1</a>
-                              <a href = "shahmaPageEditor.html" target = "_blank">Student 2</a>
-                              <a href = "senaPageEditor.html" target = "_blank">Student 3</a>
-                              <a href = "dasuniPageEditor.html" target = "_blank">Student 4</a>
+                                <a href = "ruchiniPageEditor.html" target = "_blank">Student 1</a>
+                                <a href = "shahmaPageEditor.html" target = "_blank">Student 2</a>
+                                <a href = "senabPageEditor.html" target = "_blank">Student 3</a>
+                                <a href = "dasuniPageEditor.html" target = "_blank">Student 4</a>
                             </div> 
                         </div>
                     </li>
-                    <li><a href = "sitemap.html" target = "_blank">Site Map</a></li>
                 </ol>
             </div>  
 
             <div id = "footerline">
                 <hr>
                 <p>&copy; 2024 ECO-CONCIOUS.COM</p> 
-            </div>
-              
+            </div>      
         </footer>  
     </div>
+
     <script src="js/form.js"></script>
+    <script src="js/styles.js"></script>
+    
 </body>
 </html>

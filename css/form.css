@@ -1,78 +1,88 @@
 .header_card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    width: 90%;
-    text-align: center;
-    margin: auto;
-    margin-bottom: 30px;
-    background-color: #99BC85;
-    border-radius: 10px;
-  }
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 90%;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 30px;
+  background-color: #99BC85;
+  border-radius: 10px;
+}
 
 .header_card h2,h3 {
-    color: white;
+  color: white;
 }
 
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    width: 90%;
-    margin: auto;
-    margin-bottom: 30px;
-    background-color: #BFD8AF;
-    border-radius: 10px;
-  }
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 30px;
+  background-color: #BFD8AF;
+  border-radius: 10px;
+}
 
-  .card_title {
-    width: 100%;
-    padding: 1px;
-    margin-bottom: 10PX;
-    border-radius: 10px;
-  }
+.card_title {
+  width: 100%;
+  padding: 1px;
+  margin-bottom: 10PX;
+  border-radius: 10px;
+}
 
-  .header_text{
-    padding-left: 30px;
-  }
-  
-  .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
-  
-  .container {
-    padding: 2px 16px;
-  }
+.header_text{
+  padding-left: 30px;
+}
 
-  .product_button {
-    background-color: #2d4b2d;
-    border-radius: 10px;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px 20px;
-    cursor: pointer;
-    margin-top: 20px;
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.product_button {
+  background-color: #2d4b2d;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px 20px;
+  cursor: pointer;
+  margin-top: 20px;
 }
 
 .checkout_input {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
 
-  .cvv {
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  
+.cvv {
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

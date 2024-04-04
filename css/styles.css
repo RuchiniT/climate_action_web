@@ -2,13 +2,14 @@ div{
     margin: 0;
     padding: 0;
 }
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-image: url("/images/background.png");
+    /* background-image: url("../images/background.png");
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: fixed; */
     z-index: 20;
 }
 
@@ -17,14 +18,15 @@ main{
     margin: 0;
     padding: 20px 0; 
     background-color: whitesmoke;
+    /* background-color: #5e716a; */
     height: min-content;
 }
 .navbar {
     position: relative; 
     z-index: 10;
-    background-color:#1A3C1D ;
-    opacity: 0.9;
-    height: 70vh;
+    background-color:#19312b ;
+    opacity: 1;
+    height: 50vh;
     color: #f5f5f5;
     display: flex;
     padding-bottom: 40px;
@@ -44,16 +46,6 @@ main{
     text-align: center;
 }
 
-#vision span{
-    position: absolute;
-    top: 28%;
-    font-family:"arial";
-    color: whitesmoke;
-    font-size: 380%;
-    z-index: 100;
-    text-align: center;
-    
-}
 .website-container {
     display: flex; 
     align-items: center; 
@@ -80,8 +72,22 @@ main{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
 }
 
-.navbar a:hover {
+.navbar a:hover{
+    background-color: whitesmoke; 
+    padding: 8px 14px;
+    border-radius: 5px;
+    color: #19312b;
+}
+
+
+.navbar a:active {
     text-decoration: underline;
+}
+
+.navbar a.is-active{
+    background-color:whitesmoke;
+    color: black;
+    padding: 8px 14px;
 }
 
 .navbar .user {
@@ -90,9 +96,8 @@ main{
     margin-right: 5px;
 }
 
-
 .dropbtn {
-    background-color: #1A3C1D; 
+    background-color: #19312b; 
     color: #f5f5f5; 
     padding: 10px;
     font-size: 16px;
@@ -109,7 +114,7 @@ main{
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #1A3C1D;
+    /* background-color: #19312b; */
     min-width: 160px;
     z-index: 20;
 }
@@ -119,20 +124,24 @@ main{
     padding: 8px 14px;
     text-decoration: none;
     display: block;
-    border-radius: 5px;
+    /* border-radius: 5px; */
 }
   
-.dropdown-content a:hover {
+.dropdown-content a:hover, .dropdown:hover .dropbtn {
     background-color: whitesmoke; 
-    color: #1A3C1D;
+    padding: 8px 14px;
+    border-radius: 5px;
+    color: #19312b;
+}
+
+.dropdown-content a.is-active{
+    background-color:whitesmoke;
+    color: black;
+    padding: 8px 14px;
 }
   
 .dropdown:hover .dropdown-content {
     display: block;
-}
-  
-.dropdown:hover .dropbtn {
-    text-decoration: underline; 
 }
 
 .footer-container{
@@ -142,7 +151,7 @@ main{
 
 .footer{
     z-index: 10;
-    opacity: 0.9;
+    /* opacity: 0.9; */
     height: 60%;
     background-color:#2B3121;
     color: whitesmoke;
@@ -179,7 +188,6 @@ main{
 .footer-content .left-sector .footer-title{
     padding-top: 2%;
     font-size: 30px;
-
 }
 
 .footer-content ol {
@@ -195,10 +203,15 @@ main{
 .footer-content ol li a {
     color:whitesmoke;
     text-decoration: none;
+
 }
 
 .footer-content ol li a:hover {
     text-decoration: underline;
+    color: #2B3121;
+    background-color: whitesmoke;
+    padding: 6px 10px;
+    border-radius: 5px;
 }
 
 .footer-content ol li:last-child{
@@ -209,17 +222,20 @@ main{
     text-align: center;
 }
 
-#pageeditor > a{
-    padding: 20px 20px 30px 0;
-}
-
 .editordropbtn {
     background-color: #2B3121;
     color: #f5f5f5;
-    padding: 0;
     font-size: 16px;
     border: none;
     cursor: pointer;
+}
+
+.editordropbtn:hover{
+    text-decoration: underline;
+    color: #2B3121;
+    background-color: whitesmoke;
+    padding: 6px 10px;
+    border-radius: 5px;
 }
   
 .editordropdown {
@@ -231,11 +247,11 @@ main{
 .editordropdown-content {
     top: 0;
     right: 0;
-    margin-right: 22px;
+    margin-right: 106px;
     display: none;
     position: absolute;
     color: black;
-    min-width: 160px;
+    min-width: 100px;
     z-index: 40;
 }
   
@@ -247,16 +263,13 @@ main{
 }
   
 .editordropdown-content a:hover {
-    color: black;
+    color: whitesmoke;
 }
   
 .editordropdown:hover .editordropdown-content { 
     display: block;
 }
 
-#pageeditor{
-    padding-left: 50px;
-    margin: 10px 0 0 10px;
-}
+
   
   

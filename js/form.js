@@ -11,7 +11,7 @@ function checkout() {
     const surname = document.getElementById('surname').value;
     const email = document.getElementById('email').value;
     const tel = document.getElementById('tel').value;
-    const expressDelivary = document.querySelector('.express_delivery').checked;
+    const expressDelivary = document.querySelector('#express_delivery').checked;
     if (!card_number || !cardholder_name || !expiry_date || !ccv || !address_line1 || !city || !postcode || !country || !name || !surname|| !email|| !tel) {
         alert("Please fill in all required fields.");
         return false;
